@@ -1,0 +1,31 @@
+/etc/init.d/networking restart
+echo -e '\n\n\n' | ssh-keygen
+pwd
+cp /root/.ssh/id_rsa.pub /hostlab
+
+/etc/init.d/ssh restart
+mkdir /home/homework_user
+useradd homework_user -d /home/homework_user
+chown homework_user:homework_user /home/homework_user
+echo -e 'user\nuser\n' | passwd homework_user
+mkdir /home/homework_user/.ssh
+chown homework_user:homework_user /home/homework_user/.ssh
+chmod 700 /home/homework_user/.ssh
+touch /home/homework_user/.ssh/authorized_keys
+chown homework_user:homework_user /home/homework_user/.ssh/authorized_keys
+chmod 600 /home/homework_user/.ssh/authorized_keys
+
+while [ ! -f /hostlab/id_rsa_pc1.pub ]
+do
+	sleep 2
+done
+
+cat /hostlab/id_rsa_pc1.pub > /home/homework_user/.ssh/authorized_keys
+rm /hostlab/id_rsa_pc1.pub
+
+while [ true ]
+do
+	ping -c1 -w1 1.0.1.18 > /dev/null && break
+done
+ssh -o StrictHostKeyChecking=no -NR 8000:localhost:9000 homework_user@1.0.1.18 &
+

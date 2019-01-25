@@ -1,0 +1,71 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+        Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, CN=Fort-Funston CA/emailAddress=me@myhost.mydomain
+        Validity
+            Not Before: Dec 19 10:02:12 2018 GMT
+            Not After : Dec 16 10:02:12 2028 GMT
+        Subject: C=US, ST=CA, L=SanFrancisco, O=Fort-Funston, CN=client/emailAddress=me@myhost.mydomain
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+            RSA Public Key: (1024 bit)
+                Modulus (1024 bit):
+                    00:ae:0c:74:53:ad:03:57:b0:cb:c6:33:e0:c2:c1:
+                    8d:67:ee:81:30:95:bb:e3:4f:b1:19:19:e8:a9:47:
+                    da:d7:09:a2:42:0a:f1:17:d3:fc:89:72:e1:6b:3c:
+                    5a:9c:c0:94:41:95:ef:29:a0:06:6a:87:47:e6:5e:
+                    e7:08:32:27:9c:e8:e0:f3:7c:69:a1:a0:af:8c:c6:
+                    3f:a5:8f:1e:2a:c1:63:95:18:b5:26:19:df:8b:96:
+                    fc:55:d0:62:8c:ef:9b:e1:91:55:1d:59:b7:52:71:
+                    77:94:f5:45:fb:ee:2e:fc:96:d2:a2:bd:f4:14:c9:
+                    6f:09:cd:bf:cc:06:7c:58:3b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                68:CD:10:53:FD:63:75:4A:70:5C:69:7B:97:5E:17:5C:39:02:6D:D2
+            X509v3 Authority Key Identifier: 
+                keyid:87:8D:0A:FB:DB:19:88:49:F4:6B:B2:29:19:3C:30:71:25:C6:90:C5
+                DirName:/C=US/ST=CA/L=SanFrancisco/O=Fort-Funston/CN=Fort-Funston CA/emailAddress=me@myhost.mydomain
+                serial:F7:B8:05:CC:17:10:65:E9
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha1WithRSAEncryption
+        7d:04:bb:13:eb:94:28:8a:c1:b8:2a:ee:69:26:76:5a:09:ee:
+        cd:3c:1a:77:a8:08:7a:d2:6a:01:b3:69:40:34:e7:e3:a8:47:
+        4c:33:cc:fa:d4:bc:20:26:bd:66:fe:2d:43:ec:1d:7e:ce:a3:
+        84:60:a7:26:80:7a:80:e0:0e:f0:eb:76:f6:d9:4e:38:c1:4c:
+        22:bd:4d:2e:19:61:27:82:b6:dd:74:18:2c:cf:26:e2:4b:38:
+        5f:9f:7d:4c:6c:a3:05:a5:d5:da:9a:93:a0:5b:ae:ed:9c:18:
+        f3:c6:6b:7b:28:70:32:73:fb:2b:bf:a0:3b:af:36:f5:70:6a:
+        58:0f
+-----BEGIN CERTIFICATE-----
+MIIDtjCCAx+gAwIBAgIBAjANBgkqhkiG9w0BAQUFADCBhTELMAkGA1UEBhMCVVMx
+CzAJBgNVBAgTAkNBMRUwEwYDVQQHEwxTYW5GcmFuY2lzY28xFTATBgNVBAoTDEZv
+cnQtRnVuc3RvbjEYMBYGA1UEAxMPRm9ydC1GdW5zdG9uIENBMSEwHwYJKoZIhvcN
+AQkBFhJtZUBteWhvc3QubXlkb21haW4wHhcNMTgxMjE5MTAwMjEyWhcNMjgxMjE2
+MTAwMjEyWjB8MQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFTATBgNVBAcTDFNh
+bkZyYW5jaXNjbzEVMBMGA1UEChMMRm9ydC1GdW5zdG9uMQ8wDQYDVQQDEwZjbGll
+bnQxITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpbjCBnzANBgkqhkiG
+9w0BAQEFAAOBjQAwgYkCgYEArgx0U60DV7DLxjPgwsGNZ+6BMJW740+xGRnoqUfa
+1wmiQgrxF9P8iXLhazxanMCUQZXvKaAGaodH5l7nCDInnOjg83xpoaCvjMY/pY8e
+KsFjlRi1Jhnfi5b8VdBijO+b4ZFVHVm3UnF3lPVF++4u/JbSor30FMlvCc2/zAZ8
+WDsCAwEAAaOCATwwggE4MAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAWHkVhc3kt
+UlNBIEdlbmVyYXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUaM0QU/1jdUpwXGl7
+l14XXDkCbdIwgboGA1UdIwSBsjCBr4AUh40K+9sZiEn0a7IpGTwwcSXGkMWhgYuk
+gYgwgYUxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEVMBMGA1UEBxMMU2FuRnJh
+bmNpc2NvMRUwEwYDVQQKEwxGb3J0LUZ1bnN0b24xGDAWBgNVBAMTD0ZvcnQtRnVu
+c3RvbiBDQTEhMB8GCSqGSIb3DQEJARYSbWVAbXlob3N0Lm15ZG9tYWluggkA97gF
+zBcQZekwEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMA0GCSqGSIb3
+DQEBBQUAA4GBAH0EuxPrlCiKwbgq7mkmdloJ7s08GneoCHrSagGzaUA05+OoR0wz
+zPrUvCAmvWb+LUPsHX7Oo4RgpyaAeoDgDvDrdvbZTjjBTCK9TS4ZYSeCtt10GCzP
+JuJLOF+ffUxsowWl1dqak6Bbru2cGPPGa3socDJz+yu/oDuvNvVwalgP
+-----END CERTIFICATE-----

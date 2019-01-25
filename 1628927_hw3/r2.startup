@@ -1,0 +1,19 @@
+/etc/init.d/networking restart
+/etc/init.d/quagga restart
+/etc/init.d/ssh restart
+mkdir /home/c_user
+useradd c_user -d /home/c_user
+chown c_user:c_user /home/c_user
+echo -e 'user\nuser\n' | passwd c_user
+mkdir /home/c_user/.ssh
+chown c_user:c_user /home/c_user/.ssh
+chmod 700 /home/c_user/.ssh
+touch /home/c_user/.ssh/authorized_keys
+chown c_user:c_user /home/c_user/.ssh/authorized_keys
+chmod 600 /home/c_user/.ssh/authorized_keys
+while [ ! -f /hostlab/id_rsa.pub ]
+do
+	sleep 1
+done
+
+cat /hostlab/id_rsa.pub > /home/c_user/.ssh/authorized_keys

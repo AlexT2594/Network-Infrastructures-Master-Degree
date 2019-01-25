@@ -1,0 +1,2 @@
+/etc/init.d/networking restart
+rm /hostlab/id_rsa.pub
